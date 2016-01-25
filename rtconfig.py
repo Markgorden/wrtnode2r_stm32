@@ -18,7 +18,6 @@ BUILD = ''
 STM32_TYPE = 'STM32F10X_MD'
 R_VERSION = 'V0.7'
 
-# toolchains
 PREFIX = 'arm-none-eabi-'
 CC = PREFIX + 'gcc'
 CXX = PREFIX + 'g++'
