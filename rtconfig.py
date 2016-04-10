@@ -14,9 +14,9 @@ EXEC_PATH = '/Users/schumy/arm-gcc/bin'
 if os.getenv('RTT_EXEC_PATH'):
     EXEC_PATH = os.getenv('RTT_EXEC_PATH')
 
-BUILD = ''
+BUILD = 'debug'
 STM32_TYPE = 'STM32F10X_MD'
-R_VERSION = 'V0.7'
+R_VERSION = 'V0.9'
 
 PREFIX = 'arm-none-eabi-'
 CC = PREFIX + 'gcc'
