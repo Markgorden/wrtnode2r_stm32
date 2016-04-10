@@ -14,7 +14,7 @@ EXEC_PATH = '/Users/schumy/arm-gcc/bin'
 if os.getenv('RTT_EXEC_PATH'):
     EXEC_PATH = os.getenv('RTT_EXEC_PATH')
 
-BUILD = 'debug'
+BUILD = ''
 STM32_TYPE = 'STM32F10X_MD'
 R_VERSION = 'V0.9'
 
@@ -44,5 +44,5 @@ if BUILD == 'debug':
 else:
     CFLAGS += ' -Og'
 
-    POST_ACTION = OBJCPY + ' -O binary $TARGET WRTnode_2r_STM32_rtthread_' + R_VERSION + '.bin\n' + SIZE + ' $TARGET \n'
+POST_ACTION = OBJCPY + ' -O binary $TARGET WRTnode_2r_STM32_rtthread_' + R_VERSION + '.bin\n' + SIZE + ' $TARGET \n'
 
